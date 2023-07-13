@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEAUTORIA</title>
+</head>
+<body> <center>
+    <form action="https://fom.in.ua/echo" method="POST">
+        <div>
+            <label for="cuzov">Кузов авто</label>
+            <select id="cuzov" name="kuzov">
+                <option value="Универсал">Универсал</option>
+                <option value="Купе">Купе</option>
+                <option value="Пикап">Пикап</option>
+                <option value="Седан">Седан</option>
+                <option value="Хэтчбек">Хэтчбек</option>
+                <option value="Грузовик">Грузовик</option>
+            </select>
+        </div>
+        <div>
+            <label for="label">Марка авто</label>
+            <select id="label" name="label">
+                <option value="BMW">BMW</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Geely">Geely</option>
+                <option value="Gillette">Gillette</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="VeloSeePed">VeloSeePed</option>
+                <option value="Subaru">Subaru</option>
+            </select>
+        </div>
+        <div>
+            <label for="land">Страна производитель</label>
+            <select id="land" name="land">
+                <option value="Украина">Украина</option>
+                <option value="Швеция">Швеция</option>
+                <option value="Лолалэнд">Лолалэнд</option>
+                <option value="Танзания">Танзания</option>
+                <option value="Тарзания">Тарзания</option>
+                <option value="Кения">Кения</option>
+                <option value="Ксения">Ксения</option>
+                <option value="Атлантайда">Атлантайда</option>
+                <option value="Илонмаския">Илонмаския</option>
+                <option value="Северная Корея">Северная Корея</option>
+            </select>
+        </div>
+        <div>
+            <label for="price">Цена($) от:</label>
+            <input type="number" min="1000" max="10000000" id="price" name="price">
+        </div>
+        <div>
+            <label for="price-to">Цена($) до:</label>
+            <input type="number" min="1000" max="10000000" id="price2" name="price2">
+        </div>
+        <div>
+            <label for="godvipuska">Год выпуска от:</label>
+            <select id="godvipuska" name="godvipuska">
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2077">2077</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+        </div>
+        <div>
+            <label for="godvipuska2">Год выпуска до:</label>
+            <select id="godvipuska2" name="godvipuska2">
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2077">2077</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+        </div>
+        <div>
+            <label for="status1"><input
+
+ type="checkbox" id="status1" name="status" value="Бита"> Бита</label>
+            <label for="status2"><input type="checkbox" id="status2" name="status" value="Крашена"> Крашена</label>
+            <label for="status3"><input type="checkbox" id="status3" name="status" value="Угашена"> Угашена</label>
+        </div>
+        <div>
+            <label for="benzik">Тип топлива:</label>
+            <select id="benzik" name="benzik">
+                <option value="Бензин">Бензин</option>
+                <option value="Электричество">Электричество</option>
+                <option value="Дизель">Дизель</option>
+                <option value="Гибрид">Гибрид</option>
+            </select>
+        </div>
+        <div>
+            <label for="minecraft">Тип коробки передач:</label>
+            <select id="minecraft" name="minecraft">
+                <option value="Автомат">Автомат</option>
+                <option value="Механика">Механика</option>
+                <option value="Другое">Другое</option>
+            </select>
+        </div>
+        <div>
+            <label for="color">Цвет:</label>
+            <select id="color" name="color">
+                <option value="Черный">Черный</option>
+                <option value="Белый">Белый</option>
+                <option value="Нежно-коралловый">Нежно-коралловый</option>
+                <option value="Пурпурно-снежный">Пурпурно-снежный</option>
+                <option value="Красный">Красный</option>
+            </select>
+        </div>
+        <div>
+            <label for="comfort">Комфорт:</label>
+            <select id="comfort" name="comfort">
+                <option value="Массаж">Массаж</option>
+                <option value="Люк">Люк</option>
+                <option value="Не примерзает ручка к пальцам зимой">Не примерзает ручка к пальцам зимой</option>
+                <option value="Аудио-система хармэн-картон">Аудио-система хармэн-картон</option>
+                <option value="Звёздное небо">Звёздное небо</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Найти машину">
+        </div>
+    </form> </center>
+</body>
+</html>
