@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Опис різних типів селекторів</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Селектор за атрибутом */
+    [type="text"] {
+      background-color: lightyellow;
+    }
+
+    /* Селектор за назвою елемента */
+    h1 {
+      color: blue;
+    }
+
+    /* Селектор псевдокласу */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Селектор за атрибутом */
+    [data-color="yellow"] {
+      color: rgba(255, 196, 0, 0.788);
+    }
+
+    /* Селектор за id */
+    #element1 {
+      color: red;
+    }
+
+    /* Селектор псевдоелемента */
+    p::first-line {
+      font-weight: bold;
+    }
+
+    /* Селектор вкладеності */
+    div p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Опис різних типів селекторів</h1>
+
+  <h2>Селектор за атрибутом</h2>
+  <p>Приклад селектора: <code>[type="text"]</code></p>
+  <p>Обрані елементи: всі елементи з атрибутом <code>type="text"</code></p>
+
+  <h2>Селектор псевдокласу</h2>
+  <p>Приклад селектора: <code>a:hover</code></p>
+  <p>Обрані елементи: всі посилання (<code>a</code>), над якими знаходиться вказівник миші</p>
+
+  <h2>Селектор псевдоелемента</h2>
+  <p>Приклад селектора: <code>p::first-line</code></p>
+  <p>Обрана частина елемента: перший рядок кожного елемента <code>p</code></p>
+
+  <h2>Селектор вкладеності</h2>
+  <p>Приклад селектора: <code>div p</code></p>
+  <p>Обрані елементи: всі елементи <code>p</code>, що є дочірніми для елементів <code>div</code></p>
+
+  <h1>Кольори для елементів</h1>
+
+  <h2 id="element1">Елемент 1</h2>
+  <p class="element2" style="color: green;">Елемент 2</p>
+  <div>
+    <p data-color="yellow">Елемент 3</p>
+  </div>
+  <p data-color="orange">Елемент 4</p>
+  <h3>Елемент 5</h3>
+  <p class="element2">Елемент 6</p>
+  <div>
+    <p>Елемент 7</p>
+  </div>
+  <p>Елемент 8</p>
+  <h4>Елемент 9</h4>
+  <p data-color="blue">Елемент 10</p>
+
+</body>
+</html>
